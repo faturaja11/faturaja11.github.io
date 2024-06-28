@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produk -  BURIRAM FRAM</title>
+    <title>Produk - BURIRAM FRAM</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
         .navbar {
             background-color: #000 !important;
         }
@@ -14,6 +19,11 @@
             align-items: center;
             color: #fff;
         }
+        .navbar-brand img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
         .card {
             margin-bottom: 20px;
         }
@@ -21,6 +31,11 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+        }
+        .container {
+            flex: 1;
+            padding-top: 70px;
+            padding-bottom: 70px;
         }
         footer {
             background-color: #222;
@@ -36,7 +51,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
-            <img src="logo.jpg" alt="Logo" width="100" height="100" class="d-inline-block align-top">
+            <img src="logo.jpg" alt="Logo" class="d-inline-block align-top">
             BURIRAM FARM
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +69,7 @@
     <div class="container">
         <h2 class="text-center">Produk Kami</h2>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card">
                     <img class="card-img-top" src="pama.jpg" alt="Ayam Pama">
                     <div class="card-body">
@@ -64,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card">
                     <img class="card-img-top" src="mangon.jpg" alt="Ayam Mangon">
                     <div class="card-body">
@@ -74,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card">
                     <img class="card-img-top" src="pakhoy.jpg" alt="Ayam Pakhoy">
                     <div class="card-body">
@@ -84,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card">
                     <img class="card-img-top" src="bangkok.webp" alt="Ayam Bangkok">
                     <div class="card-body">
